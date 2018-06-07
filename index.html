@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help Our Dear Leader Guess the Number</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Trump Points</h1>
+    </header>
+
+    <section>
+      <p>The number in the clear box is entirely random.</p>
+      <br/>
+      <p>There are four Trumps below. By clicking on a Trump, you will add points to your score.</p>
+      <br/>
+      <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+      <br/>
+      <p>The value of each Trump is hidden from you until you click on it.</p>
+      <br/>
+      <p>Each time when the game starts, the game will change the values of each Trump.</p>
+      <br/>
+      <p>Help our Big Wet Boy President guess the right number!</p>
+    </section>
+
+    <div id="randomnumber-and-scoreboard">
+      <div id="random-number-generator">
+        <span id="random-number"></span>
+      </div>
+
+      <div id="score-board">
+        <span id="win-or-lose"></span>
+        <br>
+        <p>Wins: <span id="win-counter">0</span></p>
+        <p>Losses: <span id="loss-counter">0</span></p>
+      </div>
+    </div>
+
+    <div id="wetBoy">
+      <img id="kiss" src="assets/images/trumpKiss.jpeg" alt="kiss" onclick="userImageScore(this)">
+      <img id="NoMakeup" src="assets/images/trumpNoMakeup.jpg" alt="NoMakeup" onclick="userImageScore(this)">
+      <img id="side" src="assets/images/trumpSide.png" alt="side" onclick="userImageScore(this)">
+      <img id="teeth" src="assets/images/trumpTeeth.jpg" alt="teeth" onclick="userImageScore(this)">
+    </div>
+
+    <div id="current-score">
+      <h1>Your total score is:</h1>
+      <span id="current-score-counter"></span>
+    </div>
+  </div>
+
+
+
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
